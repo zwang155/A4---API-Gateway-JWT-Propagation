@@ -31,3 +31,10 @@ management:
     binders:
       hystrix:
         enabled: true
+---
+micronaut:
+  security:
+    token:
+      propagation:
+        enabled: true
+        service-id-regex: "UsersServices|RequestServices|OffersServices"
